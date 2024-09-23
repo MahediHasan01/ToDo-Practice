@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        >
+
+        <EditText
+            android:id="@+id/textID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Note Here..."
+            android:background="@drawable/button_layout"
+            android:textColorHint="@color/white"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:inputType="text"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_layout"
+            android:text="ADD"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        />
+
+
+</LinearLayout>
